@@ -19,6 +19,9 @@ fn main() {
     // Pring char variables
     chars();
 
+    // Print boolean variables
+    booleans();
+
     println!("The counter is {}", counter);
     println!("My weight is {} kg.", weight);
     println!("I am {} years old.", age);
@@ -145,4 +148,14 @@ fn chars() {
 
     println!("{} is a letter: {}", letter, letter.is_alphabetic());
     println!("{} is a digit: {}", digit, digit.is_digit(10));
+}
+
+fn booleans() {
+    // Declaring and initializing a boolean variable
+    let is_raining: bool = true;
+    let is_sunny: bool = false;
+
+    // Printing the results
+    println!("Is it raining? {}", is_raining);
+    println!("Is it sunny? {}", is_sunny);
 }
