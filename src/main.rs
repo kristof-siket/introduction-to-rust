@@ -159,3 +159,13 @@ fn booleans() {
     println!("Is it raining? {}", is_raining);
     println!("Is it sunny? {}", is_sunny);
 }
+
+fn tuples() {
+    let person: (&str, i32, char, bool) = ("Alice", 30, 'F', true);
+
+    // Use the index to access the elements of a tuple
+    let name = person.0;
+
+    // Use destructuring to access the elements of a tuple
+    let (name, age, gender, is_married) = person;
+}
