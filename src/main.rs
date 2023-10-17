@@ -22,6 +22,12 @@ fn main() {
     // Print boolean variables
     booleans();
 
+    // Print tuples
+    tuples();
+
+    // Print arrays
+    arrays();
+
     println!("The counter is {}", counter);
     println!("My weight is {} kg.", weight);
     println!("I am {} years old.", age);
@@ -168,4 +174,26 @@ fn tuples() {
 
     // Use destructuring to access the elements of a tuple
     let (name, age, gender, is_married) = person;
+
+    // Print the results
+    println!("Name: {}", name);
+    println!("Age: {}", age);
+    println!("Is married? {}", is_married);
+}
+
+fn arrays() {
+    // Declaring and initializing an array of integers
+    let numbers: [i32; 6] = [1, 2, 3, 4, 5, 6];
+
+    // Get first element
+    let first: i32 = numbers[0];
+
+    println!("First number: {}", first);
+
+    // Declaring and initializing an array of strings
+    let weekdays: [&str; 5] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
+    // Print the results
+    println!("Numbers: {:?}", numbers);
+    println!("Weekdays: {:?}", weekdays);
 }
