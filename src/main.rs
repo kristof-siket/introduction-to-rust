@@ -28,6 +28,9 @@ fn main() {
     // Print arrays
     arrays();
 
+    // Print strings
+    strings();
+
     println!("The counter is {}", counter);
     println!("My weight is {} kg.", weight);
     println!("I am {} years old.", age);
@@ -196,4 +199,28 @@ fn arrays() {
     // Print the results
     println!("Numbers: {:?}", numbers);
     println!("Weekdays: {:?}", weekdays);
+}
+
+fn strings() {
+    // &str type
+    let message: &str = "Hello, world!";
+
+    // String type
+    let hello: String = String::from("Hello, ");
+
+    // String type from &str type
+    let new_message: String = message.to_string();
+
+    // Concatenation with + operator
+    let hello_world: String = hello + &new_message;
+
+    // Concatenation with format! macro
+    let age: i32 = 27;
+    let my_age: String = format!("I am {} years old.", age);
+
+    // Print the results
+    println!("{}", my_age);
+    println!("{}", message);
+    println!("{}", hello_world);
+    
 }
