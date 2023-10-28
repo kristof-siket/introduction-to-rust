@@ -1,0 +1,8 @@
+Start
+
+if isRaining() or isRainForecasted():
+    takeUmbrella()
+else if hasDarkClouds():
+    takeUmbrella()
+
+End
