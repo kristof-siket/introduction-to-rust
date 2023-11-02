@@ -73,4 +73,15 @@ fn main() {
         Direction::Left => println!("Going left!"),
         Direction::Right => println!("Going right!"),
     }
+
+    // Enum as int32
+    enum Color {
+        Red = 10,
+        Green = 20,
+        Blue = 30,
+    }
+
+    println!("Red as i32: {}", Color::Red as i32);
+    println!("Green as i32: {}", Color::Green as i32);
+    println!("Blue as i32: {}", Color::Blue as i32);
 }
