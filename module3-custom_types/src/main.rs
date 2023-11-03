@@ -84,4 +84,28 @@ fn main() {
     println!("Red as i32: {}", Color::Red as i32);
     println!("Green as i32: {}", Color::Green as i32);
     println!("Blue as i32: {}", Color::Blue as i32);
+
+    // Constants
+    const MAX_POINTS: u32 = 100_000;
+    const LANGUAGE: &str = "Rust";
+
+    println!("Max points: {}", MAX_POINTS);
+    println!("Language: {}", LANGUAGE);
+
+    // MAX_POINTS = 200_000; // Error: cannot assign twice to immutable variable
+
+    // Variables
+    let x = 10;
+    let y: i32 = 20;
+
+    // Constants cannot store the result of an expression
+    // const Z: i32 = x + y; // Error: attempt to use a non-constant value in a constant
+
+    // Constants use cases
+    const PI: f64 = 3.14159265359;
+    const EULER: f64 = 2.71828182846;
+
+    const FILE_NOT_FOUND: i32 = 404;
+    const MAX_USERS: u32 = 100;
+
 }
