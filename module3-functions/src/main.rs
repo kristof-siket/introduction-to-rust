@@ -77,6 +77,7 @@ impl Dog {
     }
 
     // This is a method (called on an instance of the type)
+    // &self is a reference to the instance
     fn bark(&self) {
         println!("{} barks!", self.name);
     }
@@ -84,7 +85,11 @@ impl Dog {
     // A method with argument and return value
     // This requires the caller object to be mutable!
     fn grow(&mut self, years: u8) -> u8 {
+
+        // Access the instance's fields
         self.age += years;
+
+        // Return the new age (return statement is optional)
         self.age
     }
 }
