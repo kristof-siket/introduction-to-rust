@@ -25,10 +25,10 @@ fn main() {
     // Call the bark() method on the dog (instance-level)
     my_dog2.bark();
 
-    // Destructure my_dog2
+    // Call the grow() method on the dog (instance-level), which returns a value and modifes the dog
     let new_age = my_dog2.grow(2);
 
-    // Call the grow() method on the dog (instance-level), which returns a value and modifes the dog
+    // new_age is the return value of the grow() method
     println!("{} is now {} years old", my_dog2.name, new_age);
 
     // The inner state of my_dog2 has been modified
