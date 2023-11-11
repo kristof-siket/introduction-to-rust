@@ -13,7 +13,7 @@ fn main() {
     let s = format!("Hello, world!"); // Similar to println! but returns a String
 
     // env! is a macro that looks up an environment variable at compile time
-    let path = env!("PATH"); // API_TOKEN must be set in the environment
+    let path = env!("PATH");
     println!("PATH: {}", path);
 
     let a_b = concat!("A", "B"); // Concatenate literals at compile time
